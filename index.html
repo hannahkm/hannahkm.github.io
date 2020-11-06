@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>hannah kim</title>
+        <meta name="viewport" content="width=device-width, initial-scale:1.0"/>
         <meta name="description" content="description here">
         <link rel="icon" href="images/H_icon.png">
         <link rel="stylesheet" href="main.css">
@@ -15,10 +16,10 @@
     <body>
          <nav id="bar" class="bar_og">
             <ul class="menu">
-                <li style="float: left; font-size: 30px; font-family:'Courier New'"><a href="#head">hannah kim</a></li>
                 <li><a href="#contact">Contact Me</a></li>
                 <li><a href="#projects">My Projects!</a></li>
                 <li><a href="#about">About</a></li>
+                <li class="home_butt"><a href="#head">hannah kim</a></li>
             </ul>
         </nav>
         <header id="head">
@@ -29,9 +30,9 @@
                 <div class="about_toggle" >
                     <h1>About Me</h1>
                     <div class="bio_toggle"> 
-                        <label class="short radio_butt active_radio"> <input type="radio" id = "short" class="radio_b" name="bio_radio" value="short_bio" checked> Short TL;DR</label> 
+                        <label class="short radio_butt active_radio"> <input type="radio" id = "short" class="radio_b" name="bio_radio" value="short_bio" checked> TL;DR</label> 
                         <label class="fun radio_butt"> <input type="radio" id = "fun" class="radio_b" name="bio_radio" value="fun_bio"> Fun Facts :)</label> 
-                        <label class="resume radio_butt"> <input type="radio" id = "resume" class="radio_b" name="bio_radio" value="resume_bio"> Basically My Resume - Condensed</label> 
+                        <label class="resume radio_butt"> <input type="radio" id = "resume" class="radio_b" name="bio_radio" value="resume_bio"> Short Resume</label> 
                     </div>
                 </div>
                 <div class = "short_bio default_bio selected">
@@ -45,13 +46,13 @@
                         <li>Watching Netflix (my latest favorites include The Umbrella Academy, Avatar: The Last Airbender, and Itaewon Class)</li>
                         <li>Listening to music and/or making Spotify playlists</li>
                         <li>Hiking with friends (which poses the extra challenge, as of 2020, of hiking with a mask)</li>
-                        <li>Doodling!</li>
+                        <li>Doodling</li>
                     </ul>
-                    <p>Fun facts about me :)</p>
+                    <p>Fun facts about me</p>
                     <ul>
-                        <li>I have a cat named Major!</li>
+                        <li>I have a cat named Major</li>
                         <li>My favorite color is purple, even though my entire website is blue</li>
-                        <li>I was in the top 1% of Troye Sivan's fans on Spotify</li>
+                        <li>I was in the top 1% of Troye Sivan's fans on Spotify :)</li>
                     </ul>
                     <p>See something you like too? Let's <a href="#contact">talk</a>!</p>
                 </div>
@@ -73,56 +74,55 @@
             <div id="projects">
                 <h1>My Projects!</h1>
                 <div class='project-container'>
-                    <div class='projects'>
-                        <img src="images/wildfires.png" alt="Wildfire Analysis" class="project_img">
-                        <div class="project_intro">
-                            <div class = 'project_title'>Analysis of California Wildfires</div>
-                            <div class = "project_links">
-                                <a href="https://github.com/hannahkm/Wildfire-Analysis" target="_blank"><img src="images/github.png" alt="see on github" class="link_img"></a>
-                                <a href="https://www.mdpi.com/2225-1154/7/12/135/htm" target="_blank"><img src="images/paper.png" alt="read my paper" class="link_img"></a>
+                    <ul class="projects">
+						<li>
+							<img src="images/wildfires.png" alt="Wildfire Analysis" class="project_img">
+                            <div class="project_intro">
+                                <div class = 'project_title'>Analysis of California Wildfires</div>
+                                <div class = "project_links">
+                                    <a href="https://github.com/hannahkm/Wildfire-Analysis" target="_blank"><img src="images/github.png" alt="see on github" class="link_img"></a>
+                                    <a href="https://www.mdpi.com/2225-1154/7/12/135/htm" target="_blank"><img src="images/paper.png" alt="read my paper" class="link_img"></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class = 'project_descrip'>Uses Topological Data Analysis (TDA) in <b>R</b> to anaylze wildfires in California. Second place winner at the Baltimore Science Fair (2019) and a Regeneron STS 2020 scholar project.</div>
-                    </div>
-                    <div class='projects'>
-                        <img src="images/easthaven.png" alt="Easthaven Apothecary" class="project_img">
-                        <div class="project_intro">
-                            <div class = 'project_title'>Easthaven Apothecary</div>
-                            <div class = "project_links">
-                                <a href="https://github.com/kgauld1/Easthaven-Apothecary" target="_blank"><img src="images/github.png" alt="see on github" class="link_img"></a>
-                                <a href="https://devpost.com/software/mypotionsaretoostrongforyoutraveller" target="_blank"><img src="images/devpost.png" alt="see our devpost" class="link_img"></a>
+                            <div class = 'project_descrip'>Uses Topological Data Analysis (TDA) in <b>R</b> to anaylze wildfires in California. Second place winner at the Baltimore Science Fair (2019) and a Regeneron STS 2020 scholar project.</div>
+						</li>
+						<li>
+                            <img src="images/easthaven.png" alt="Easthaven Apothecary" class="project_img">
+                            <div class="project_intro">
+                                <div class = 'project_title'>Easthaven Apothecary</div>
+                                <div class = "project_links">
+                                    <a href="https://github.com/kgauld1/Easthaven-Apothecary" target="_blank"><img src="images/github.png" alt="see on github" class="link_img"></a>
+                                    <a href="https://devpost.com/software/mypotionsaretoostrongforyoutraveller" target="_blank"><img src="images/devpost.png" alt="see our devpost" class="link_img"></a>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class = 'project_descrip'>
-                            Easthaven Apothecary is a medieval RPG with a unique arcade-like twist. Built using <b>p5.js</b> with two teammates and submitted to MLH Roll for Hacking (2020).
-                        </div>
-                    </div>
-                </div>
-                <div class='project-container'>
-                    <div class='projects'>
-                        <img src="images/skybound.png" alt="Skybound" class="project_img">
-                        <div class="project_intro">
-                            <div class = 'project_title'>Skybound</div>
-                            <div class = "project_links">
-                                <a href="https://glitch.com/~forest-carnelian-journey" target="_blank"><img src="images/fish.png" alt="see our glitch repo" class="link_img"></a>
+                            <div class = 'project_descrip'>
+                                Easthaven Apothecary is a medieval RPG with a unique arcade-like twist. Built using <b>p5.js</b> with two teammates and submitted to MLH Roll for Hacking (2020).
                             </div>
-                        </div>
-                        
-                        <div class = 'project_descrip'>My final project for the Google Computer Science Summer Institute (CSSI): Online. A platformer that uses the player's audio to move the character. Uses <b>p5.js</b> and the p5 sound library.</div>
-                    </div>
-                    <div class='projects'>
-                        <img src="images/collabcove.png" alt="CollabCove" class="project_img">
-                        <div class="project_intro">
-                            <div class = 'project_title'>CollabCove</div>
-                            <div class = "project_links">
-                                <a href="https://github.com/hannahkm/CollabCove" target="_blank"><img src="images/github.png" alt="see on github" class="link_img"></a>
+						</li>
+						<li>
+                            <img src="images/skybound.png" alt="Skybound" class="project_img">
+                            <div class="project_intro">
+                                <div class = 'project_title'>Skybound</div>
+                                <div class = "project_links">
+                                    <a href="https://glitch.com/~forest-carnelian-journey" target="_blank"><img src="images/fish.png" alt="see our glitch repo" class="link_img"></a>
+                                </div>
                             </div>
-                        </div>
-                        <!--Image of cove from WordPress-->
-                        
-                        <div class = 'project_descrip'>A website to create and manage group projects, created (ironically) as a group project using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>.</div>
-                    </div>
+
+                            <div class = 'project_descrip'>My final project for the Google Computer Science Summer Institute (CSSI): Online. A platformer that uses the player's audio to move the character. Uses <b>p5.js</b> and the p5 sound library.</div>
+						</li>
+						<li>
+							<img src="images/collabcove.png" alt="CollabCove" class="project_img">
+                            <div class="project_intro">
+                                <div class = 'project_title'>CollabCove</div>
+                                <div class = "project_links">
+                                    <a href="https://github.com/hannahkm/CollabCove" target="_blank"><img src="images/github.png" alt="see on github" class="link_img"></a>
+                                </div>
+                            </div>
+                            <!--Image of cove from WordPress-->
+
+                            <div class = 'project_descrip'>A website to create and manage group projects, created (ironically) as a group project using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>.</div>
+						</li>
+                    </ul>
                 </div>
             </div>
             <div id="contact">
