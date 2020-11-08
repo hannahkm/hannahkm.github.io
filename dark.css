@@ -1,0 +1,151 @@
+#html {
+  background: #1C1D1D;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #1C1D1D;
+  color: #545454;
+  line-height: 1.5;
+  width: 86%;
+  margin: 0 12%;
+}
+
+.body_container {
+    padding: 0;
+    background-color: #1C1D1D;
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+p, h1, h2, h3, a{
+    color: #C6CACA;
+    padding: 0;
+    margin: 3% 0;
+    font-family: "Roboto Condensed";
+}
+
+ul{
+    margin-top: -2%;
+}
+
+li {
+    margin: 1% 0; 
+    color: #C6CACA;
+    font-family: "Roboto Condensed";
+}
+
+b, strong{
+    color: #5198B3;
+}
+
+a:link {
+  color: #74B7D1;
+  text-decoration: none;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+a:visited {
+  color: #74B7D1;
+}
+
+a:hover {
+  color: #94C0D1;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.header{
+    margin: 0 10%;
+    width: 80%;
+    padding-top: 3vh;
+    display: flex;
+    align-items: center;
+}
+
+.headshot{
+    border-radius: 50%;
+    width: 15vw;
+    float: left;
+    margin-right: 8vw;
+}
+
+.header_right{
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+}
+
+.main_title{
+    float: left;
+    font-size: 5vh;
+    padding-bottom: 0;
+}
+
+.socials{
+    font-size: 2.5vh;
+    padding: 0;
+}
+
+.socials > a {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.socials > a:hover {
+    color: #94C0D1;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+nav {
+    padding-top: 3vh;
+    float: left;
+    z-index: 1000;
+}
+
+nav > ul {
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav > ul > li {
+    float:left;
+    padding-right: 1vw;
+}
+
+nav > ul > li > a {
+  font-size: 3vh;
+  text-decoration: none;
+}
+
+.menu {
+  margin: auto;
+}
+
+.bar_og > ul > li > a {
+    color: #C6CACA;
+    font-size: 2.7vh;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.bar_og > ul > li > a:hover {
+  color: #61a3bc;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+

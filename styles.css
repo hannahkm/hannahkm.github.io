@@ -1,0 +1,246 @@
+#html {
+  background: white;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #F7F7F7;
+  color: #545454;
+  line-height: 1.5;
+  width: 86%;
+  margin: 0 12%;
+}
+
+.body_container {
+    padding: 0;
+    background-color: #F7F7F7;
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+
+p, h1, h2, h3, a{
+    padding: 0;
+    margin: 3% 0;
+    font-family: "Roboto Condensed";
+}
+
+ul{
+    margin-top: -2%;
+}
+
+li {
+    margin: 1% 0; 
+    font-family: "Roboto Condensed";
+}
+
+b, strong{
+    color: #498ca6;
+}
+
+a:link {
+  color: #61a3bc;
+  text-decoration: none;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+a:visited {
+  color: #61a3bc;
+}
+
+a:hover {
+  color: #5cd5d3;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.header{
+    margin: 0 10%;
+    width: 80%;
+    padding-top: 9vh;
+    display: flex;
+    align-items: center;
+}
+
+.headshot{
+    border-radius: 50%;
+    width: 15vw;
+    float: left;
+    margin-right: 8vw;
+}
+
+.header_right{
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+}
+
+.main_title{
+    float: left;
+    font-size: 5vh;
+    padding-bottom: 0;
+}
+
+.socials{
+    font-size: 2.5vh;
+    padding: 0;
+}
+
+.socials > a {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.socials > a:hover {
+    color: #5cd5d3;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+nav {
+    padding-top: 2vh;
+    float: left;
+    z-index: 1000;
+}
+
+nav > ul {
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav > ul > li {
+    float:left;
+    padding-right: 1vw;
+}
+
+nav > ul > li > a {
+  font-size: 3vh;
+  text-decoration: none;
+}
+
+.menu {
+  margin: auto;
+}
+
+.bar_og > ul > li > a {
+  color: black;
+  font-size: 2.7vh;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.bar_og > ul > li > a:hover {
+  color: #61a3bc;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+/*Phone screens*/
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0 0 0 0;
+        padding: 0;
+    }
+    
+    .body_container {
+        padding: 0;
+        background-color: #F7F7F7;
+        margin: 0 5%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
+    .header{
+        padding: 0;
+        width: 100%;
+        padding-top: 9vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+    }
+    
+    .headshot{
+        border-radius: 50%;
+        margin: 0 10%;
+        width: 80%;
+        float: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .header_right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .main_title{
+        text-align: center;
+        font-size: 5vh;
+        padding-bottom: 0;
+    }
+
+    .socials{
+        font-size: 2.5vh;
+        padding: 0;
+    }
+    
+    nav {
+        padding-top: 2vh;
+        float: center;
+        z-index: 1000;
+    }
+
+    nav > ul {
+        padding: 0;
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    nav > ul > li {
+        padding-right: 3vw;
+    }
+
+}
+
+/*Tablets*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+        nav {
+        padding-top: 2vh;
+        float: center;
+        z-index: 1000;
+    }
+
+    nav > ul {
+        padding: 0;
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    nav > ul > li {
+        padding: 0 1.5vw;
+    }
+}
+
