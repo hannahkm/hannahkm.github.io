@@ -1,53 +1,154 @@
-.about{
-    margin: 0 9vw;
-    width: 80%;
-    padding-top: 7vh;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+.about {
+  margin: 0 9vw;
+  width: 80%;
+  padding-top: 7vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
-.page_title{
-    text-align: center;
-    font-size: 4vh;
-    padding: 0;
+.page_title {
+  text-align: center;
+  font-size: 4vh;
+  padding: 0;
 }
 
-.about_left{
-    width: 20%;
-    margin-right: 10vw;
-    float: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.about_left {
+  width: 20%;
+  margin-right: 10vw;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about_left > ul {
-    padding: 0;
-    list-style-type: none;
+  padding: 0;
+  list-style-type: none;
 }
 
 .about_left > ul > li > a {
-    font-size: 3vh;
-    text-decoration: none;
+  font-size: 3vh;
+  text-decoration: none;
 }
 
-button{
-    margin: 1vh 5%;
-    height: 5vh;
-    width: 95%;
-    outline: none;
-    align-items: center;
+button {
+  margin: 1vh 5%;
+  height: 5vh;
+  width: 95%;
+  outline: none;
+  align-items: center;
 }
 
 .radio_butt > input {
-    position: absolute;
-    opacity: 0;
-    height: 0;
-    width: 0;
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
 }
 
 .radio_butt {
+  margin: 3% 2.5%;
+  width: 95%;
+  border: 3px solid #c7d0d0;
+  border-radius: 25px;
+  background-color: white;
+  font-family: "Roboto Condensed";
+  font-weight: 550;
+  font-size: 1.8vh;
+  text-align: center;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.radio_butt label {
+  white-space: normal;
+}
+
+.radio_butt:hover {
+  background-color: #f3f3f3;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.active_radio {
+  padding: 5%;
+  border: 3px solid #61a3bc;
+  border-radius: 25px;
+  background-color: white;
+  font-weight: 550;
+  font-family: "Roboto Condensed";
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.active_radio:hover {
+  background-color: #e3f3f9;
+  cursor: pointer;
+}
+
+.about_right {
+  width: 50%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+}
+
+.selected {
+  font-size: 2.4vh;
+  display: none;
+  float: left;
+}
+
+.default_bio {
+  font-size: 2.4vh;
+  display: block;
+  float: left;
+}
+
+/*Phone screens*/
+@media only screen and (max-width: 768px) {
+  .about {
+    padding: 0;
+    width: 90%;
+    padding-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .about_left {
+    margin: 0 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .page_title {
+    width: 100%;
+    text-align: center;
+    font-size: 4vh;
+    padding: 0;
+  }
+
+  .about_right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .radio_butt {
     padding: 5%;
     border: 3px solid #c7d0d0;
     border-radius: 25px;
@@ -56,131 +157,26 @@ button{
     font-weight: 550;
     font-size: 1.8vh;
     text-align: center;
-    -webkit-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-}
+  }
 
-.radio_butt label {
+  .radio_butt label {
     white-space: normal;
-}
+  }
 
-.radio_butt:hover {
-    background-color: #f3f3f3;
-    cursor: pointer;
-    -webkit-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-}
+  .radio_butt:hover {
+    background-color: white;
+  }
 
-.active_radio {
+  .active_radio {
     padding: 5%;
     border: 3px solid #61a3bc;
     border-radius: 25px;
     background-color: white;
     font-weight: 550;
     font-family: "Roboto Condensed";
-    -webkit-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-}
+  }
 
-.active_radio:hover {
-    background-color: #e3f3f9;
-    cursor: pointer;
-}
-
-.about_right{
-    width: 50%;
-    float: left;
-    display: flex;
-    flex-direction: column;
-    align-content: space-evenly;
-}
-
-.selected {
-    font-size: 2.4vh;
-    display: none;
-    float: left;
-}
-
-.default_bio {
-    font-size: 2.4vh;
-    display: block;
-    float: left;
-}
-
-
-/*Phone screens*/
-@media only screen and (max-width: 768px) {
-    .about{
-        padding: 0;
-        width: 90%;
-        padding-top: 3vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .about_left{
-        margin: 0 0 0 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        text-align: center;
-        justify-content: center;
-    }
-    
-    
-    .page_title{
-        width: 100%;
-        text-align: center;
-        font-size: 4vh;
-        padding: 0;
-    }
-    
-    .about_right{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-    }
-
-    
-    .radio_butt {
-        padding: 5%;
-        border: 3px solid #c7d0d0;
-        border-radius: 25px;
-        background-color: white;
-        font-family: "Roboto Condensed";
-        font-weight: 550;
-        font-size: 1.8vh;
-        text-align: center;
-    }
-
-    .radio_butt label {
-        white-space: normal;
-    }
-
-    .radio_butt:hover {
-        background-color: white;
-    }
-
-    .active_radio {
-        padding: 5%;
-        border: 3px solid #61a3bc;
-        border-radius: 25px;
-        background-color: white;
-        font-weight: 550;
-        font-family: "Roboto Condensed";
-    }
-
-    .active_radio:hover {
-        background-color: #61a3bc;
-    }
-
-
+  .active_radio:hover {
+    background-color: #61a3bc;
+  }
 }
