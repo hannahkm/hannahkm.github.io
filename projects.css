@@ -1,7 +1,4 @@
 .project-container {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
   width: 80%;
   margin: auto;
   padding-top: 7vh;
@@ -14,12 +11,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px;
+  width: 100%;
   margin: auto;
 }
 
 .projects > li {
   width: 16.5vw;
-  margin: 1.5vw 0;
 }
 
 .project_img {
@@ -90,7 +87,6 @@ body.dark_mode .overlay {
 
 body.dark_mode .project_descrip {
   color: #ebe7de;
-
 }
 
 /*Phone screens*/
