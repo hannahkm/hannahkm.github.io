@@ -1,6 +1,4 @@
-
 $(document).ready(function (){
-
     $('.radio_butt').click(function() { 
         var inputted = $(this).find('input');
         var inputValue = inputted.attr("value");
@@ -14,3 +12,11 @@ $(document).ready(function (){
     });
 
 });
+
+function darkMode() {
+  let classList = document.body.classList;
+  document.getElementById("toggle").addEventListener("change", event => {
+    event.target.checked ? classList.add("dark_mode") : classList.remove("dark_mode");
+  });
+  console.log(document.body.classList);
+}
