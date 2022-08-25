@@ -9,7 +9,7 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 0px;
   width: 100%;
@@ -108,9 +108,9 @@ body.dark_mode .project_descrip {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-content: start;
     text-align: center;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .projects > li {

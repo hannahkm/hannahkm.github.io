@@ -115,7 +115,7 @@ a:hover {
 .header {
   width: 60%;
   margin: auto;
-  padding-top: 9vh;
+  padding-top: 5vh;
   display: flex;
   align-items: center;
 }
