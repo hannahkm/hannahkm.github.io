@@ -1,6 +1,6 @@
 import './App.css';
 import { experiences } from './experiences';
-import { useState, useRef} from 'react';
+import React, { useState, useRef} from 'react';
 import headshot_1 from "./images/IG_headshot.png";
 import {projects, projectContent} from "./projects.js"
 
@@ -22,9 +22,9 @@ function App() {
     }
   }
 
-  function scrollProjects() {
-    ref.current?.scrollIntoView({behavior: 'smooth'});
-  }
+  // const scrollProjects = () => (
+  //   ref.current?.scrollIntoView({behavior: 'smooth'})
+  // );
 
   return (
     <div className="App-body">
@@ -46,7 +46,7 @@ function App() {
           <div className="App-aboutButtons">
             <p className="App-aboutButton" onClick={changeTab}>experience</p>
             <p className="App-aboutButton" onClick={changeTab}>my interests</p>
-            <p className="App-aboutButton" onClick={scrollProjects}>projects</p>
+            {/* <p className="App-aboutButton" onClick={scrollProjects}>projects</p> */}
           </div>
           <div className="App-aboutSectionWrapper">
           {tab === "experience" ? 
