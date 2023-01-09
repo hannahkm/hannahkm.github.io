@@ -1,0 +1,327 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+}
+
+.App-fullPage {
+  background-color: #FAF9F2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #343128;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.App-fullPage::-webkit-scrollbar {
+  display: none;
+}
+
+.App-fullPage {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.App-page {
+  width: 80vw;
+  height: 80vh;
+  padding: 10vh 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.App-rectangle {
+  background-color: #DCBC94;
+  border-radius: 8px;
+  width: 40%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.App-rectangle h1 {
+  font-size: 2.3em;
+}
+
+.App-rectangle p {
+  font-size: 1.7em;
+}
+
+.App-socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  font-size: 0.7em;
+}
+
+.App-socialLink {
+  color: #343128;
+  margin: 0 0.5em 0 0;
+}
+
+.App-socialLink:hover {
+  color: #754914;
+  cursor: pointer;
+}
+
+.App-headshotWrapper {
+  width: 12vw;
+  height: 12vw;
+}
+
+.App-headshot {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+  border-radius: 50%;
+}
+
+.App-experience {
+  width: 50%;
+}
+
+.App-aboutButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.App-aboutButton { 
+  font-size: 1.8em;
+  margin-right: 1em;
+  padding: 0.3em 0;
+  border-radius: 8px;
+  position: relative;
+  text-decoration: none;
+  transition: transform 0.25s ease-out;
+}
+
+.App-aboutButton::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #9c7e59;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+  transform: scaleX(0);
+}
+
+.App-aboutButton:hover {
+  color: #9c7e59;
+  cursor: pointer;
+  transition: transform 0.25s ease-out;
+}
+
+.App-aboutButton:hover::after {
+  transform: scaleX(1);
+}
+
+.App-aboutSectionWrapper {
+  height: 65vh;
+  overflow-y: scroll;
+}
+
+.App-aboutSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  font-size: 1.1em;
+}
+
+.App-experienceBlock {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.App-experienceLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.App-experienceBlurb {
+  margin-top: 0.2em;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.App-aboutSection p, ul {
+  margin: 0.3em;
+}
+
+.App-projectTabsWrapper {
+  border-radius: 8px;
+  width: 40%;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.App-projectTabsWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.App-projectTabsWrapper {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.App-projectTabs {
+  border-radius: 8px;
+}
+
+.App-projectTab {
+  margin: 1em;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.App-projectTab:hover {
+  color: #786244
+}
+
+.App-projectTabTitle {
+  font-size: 1.3em;
+}
+
+.App-projectContent {
+  padding: 0.3em;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-projectTabBlurb {
+  font-size: 1em;
+  font-style: italic;
+}
+
+.App-projectRectangle {
+  background-color: #DCBC94;
+  width: 0.5em;
+  border-radius: 5px 0 0 5px;
+}
+
+.App-activeProject {
+  background-color: #DCBC94;
+  border-radius: 0 5px 5px 0;
+}
+
+.App-projectAbout {
+  width: 50%;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.App-projectTitle {
+  font-size: 1.8em;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  transition: transform 0.25s ease-out;
+}
+
+.App-projectTitle:hover {
+  color: #9c7e59;
+  cursor: pointer;
+  transition: transform 0.25s ease-out;
+}
+
+.App-projectImg {
+  width: 60%;
+  margin: 2em 15%;
+  border-radius: 8px;
+}
+
+.App-projectDescription {
+  font-size: 1.1em;
+  width: 95%;
+  margin: 2% auto;
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 1024px){
+  .App {
+    text-align: center;
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    color: #343128;
+    overflow-y: scroll;
+  }
+
+  .App-fullPage {
+    background-color: #FAF9F2;
+    min-height: 100vh;
+  }
+
+  .App-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .App-rectangle {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .App-headshotWrapper {
+    width: 65vw;
+    height: 65vw;
+  }
+
+  .App-aboutButtons {
+    width: 80vw;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .App-aboutButton {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .App-experienceLine {
+    flex-direction: column;
+  }
+
+  .App-aboutSectionWrapper {
+    height: 100%;
+    width: 90vw;
+  }
+
+  .App-aboutSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1em;
+  }
+
+  .App-projectTabsWrapper {
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .App-projectAbout {
+    width: 100%;
+    text-align: center;
+  }
+
+}
