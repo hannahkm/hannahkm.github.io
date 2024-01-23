@@ -1,5 +1,12 @@
 export const experiences = [
     {
+        company: "Datadog",
+        dates: "may 2023-aug 2023",
+        position: "software engineering intern",
+        location: "nyc",
+        summary: "worked in Golang to introduce new features, handle customer requests, and fix bugs in the Datadog Golang Tracer and the Tracer Agent. organized intern presentations with 6 interns and ~70 engineers in attendance."
+    },
+    {
         company: "HackMIT",
         dates: "aug 2020-oct 2022",
         position: "organizing member",

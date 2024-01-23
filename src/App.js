@@ -1,30 +1,16 @@
 import './App.css';
 import { experiences } from './experiences';
 import React, { useState, useRef} from 'react';
-import headshot_1 from "./images/IG_headshot.png";
+import headshot_1 from "./images/Subject.png";
 import {projects, projectContent} from "./projects.js"
 
 function App() {
   const [tab, setState] = useState("experience");
-  const [project, setProject] = useState("WorldWiki");
-  const ref = useRef(null);
 
   function changeTab(e) {
     e.preventDefault();
     setState(e.currentTarget.textContent);
   }
-
-  function changeProject(e) {
-    e.preventDefault();
-    let p = e.target.id;
-    if (p in projectContent) {
-      setProject(e.target.id);
-    }
-  }
-
-  // const scrollProjects = () => (
-  //   ref.current?.scrollIntoView({behavior: 'smooth'})
-  // );
 
   return (
     <div className="App-body">
@@ -36,17 +22,18 @@ function App() {
           </div>
           <h1>hello, i'm hannah.</h1>
           <div className="App-socials">
-            <p href="mailto:hannahkm@mit.edu" className="App-socialLink">email</p>
-            <p href="https://www.github.com/hannahkm" className="App-socialLink">github</p>
-            <p href="https://www.linkedin.com/in/hannah-kim24" className="App-socialLink">linkedin</p>
+            <a href="mailto:hannahkm@mit.edu" className="App-socialLink">email</a>
+            <a href="https://www.github.com/hannahkm" target="_blank" className="App-socialLink">github</a>
+            <a href="https://www.linkedin.com/in/hannah-kim24" target="_blank" className="App-socialLink">linkedin</a>
           </div>
-          <p>i am a junior at MIT (co 2024) studying computer science with a concentration in linguistics. i enjoy taking on creative and challenging projects, and i am especially passionate about spreading my love for technology to others through education.</p>
+          <p>i am a senior at MIT (co 2024) studying computer science with a concentration in linguistics. i enjoy taking on creative and challenging projects, and i am especially passionate about spreading my love for technology to others through education.</p>
         </div>
         <div className="App-experience">
           <div className="App-aboutButtons">
             <p className="App-aboutButton" onClick={changeTab}>experience</p>
             <p className="App-aboutButton" onClick={changeTab}>my interests</p>
-            {/* <p className="App-aboutButton" onClick={scrollProjects}>projects</p> */}
+            <p className="App-aboutButton" onClick={changeTab}>projects</p>
+            <p className="App-aboutButton" onClick={changeTab}>writing</p>
           </div>
           <div className="App-aboutSectionWrapper">
           {tab === "experience" ? 
@@ -68,7 +55,7 @@ function App() {
                 </div>
               )}
             </div>
-          : 
+          : tab === "my interests" ?
             <div className="App-aboutSection">
               <p>here are few of the things i've found interesting or want to explore!</p>
               <p>what i enjoy:</p>
@@ -90,34 +77,29 @@ function App() {
                 <li>archery -- i took a class and i loved it!</li>
               </ul>
             </div>
-          }
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="App-fullPage" ref={ref}>
-      <div className="App-page">
-        <div className="App-projectTabsWrapper">
-          <div className="App-projectTabs">
-            {projects.map((p) => 
-              <div className="App-projectTab" onClick={changeProject} id={p.name}>
-                <div className="App-projectRectangle"></div>
-                <div className={p.name === project ? "App-projectContent App-activeProject" : "App-projectContent"}>
-                  <div className="App-projectTabTitle" id={p.name}>{p.name}</div>
-                  <div className="App-projectTabBlurb" id={p.name}>{p.blurb}</div>
-                </div>
+          : tab == "writing" ?
+            <div className="App-aboutSection">
+              coming soon...
+            </div>
+          :
+            <div className="App-aboutSection">
+              <div className="App-projectTabsWrapper">
+              <div className="App-projectTabs">
+                {projects.map((p) => 
+                  <div className="App-projectAbout">
+                    <div className="App-projectTitle" onClick={()=> window.open(projectContent[p.name].link, "_blank")}>{p.name}</div>
+                    <div className="App-projectDescription">
+                      {projectContent[p.name].description.map((para) =>
+                        <p className="App-projectDescriptionParagraph">{para}</p>
+                      )}
+                      <p><i>built using: {projectContent[p.name].stack}</i></p>
+                    </div>
+                  </div>
+                )}
               </div>
-            )}
-          </div>
-        </div>
-        <div className="App-projectAbout">
-          <div className="App-projectTitle" onClick={()=> window.open(projectContent[project].link, "_blank")}>{project}</div>
-          <img className="App-projectImg" src={projectContent[project].img} alt="project img"/>
-          <div className="App-projectDescription">
-            {projectContent[project].description.map((para) =>
-              <p className="App-projectDescriptionParagraph">{para}</p>
-            )}
-            <p>built using: {projectContent[project].stack}</p>
+            </div>
+            </div>
+          }
           </div>
         </div>
       </div>

@@ -57,16 +57,17 @@
   display: flex;
   flex-direction: row;
   justify-content: left;
-  font-size: 0.7em;
 }
 
 .App-socialLink {
   color: #343128;
+  text-decoration: none;
   margin: 0 0.5em 0 0;
 }
 
 .App-socialLink:hover {
   color: #754914;
+  text-decoration: underline;
   cursor: pointer;
 }
 
@@ -80,7 +81,7 @@
   margin: 0 auto;
   height: 100%;
   width: auto;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 .App-experience {
@@ -94,7 +95,7 @@
 }
 
 .App-aboutButton { 
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin-right: 1em;
   padding: 0.3em 0;
   border-radius: 8px;
@@ -142,7 +143,7 @@
 .App-experienceBlock {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 .App-experienceLine {
@@ -158,12 +159,11 @@
 }
 
 .App-aboutSection p, ul {
-  margin: 0.3em;
+  margin: 0.5em;
 }
 
 .App-projectTabsWrapper {
   border-radius: 8px;
-  width: 40%;
   height: 80vh;
   overflow-y: scroll;
 }
@@ -184,7 +184,7 @@
 }
 
 .App-projectTab {
-  margin: 1em;
+  /* margin: 1em; */
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -195,9 +195,6 @@
   color: #786244
 }
 
-.App-projectTabTitle {
-  font-size: 1.3em;
-}
 
 .App-projectContent {
   padding: 0.3em;
@@ -207,32 +204,18 @@
 }
 
 .App-projectTabBlurb {
-  font-size: 1em;
   font-style: italic;
 }
 
-.App-projectRectangle {
-  background-color: #DCBC94;
-  width: 0.5em;
-  border-radius: 5px 0 0 5px;
-}
-
-.App-activeProject {
-  background-color: #DCBC94;
-  border-radius: 0 5px 5px 0;
-}
-
 .App-projectAbout {
-  width: 50%;
-  height: 80vh;
   overflow-y: scroll;
 }
 
 .App-projectTitle {
-  font-size: 1.8em;
+  font-size: 1.1em;
   cursor: pointer;
   position: relative;
-  text-decoration: none;
+  text-decoration: underline;
   transition: transform 0.25s ease-out;
 }
 
@@ -242,16 +225,10 @@
   transition: transform 0.25s ease-out;
 }
 
-.App-projectImg {
-  width: 60%;
-  margin: 2em 15%;
-  border-radius: 8px;
-}
-
 .App-projectDescription {
-  font-size: 1.1em;
   width: 95%;
   margin: 2% auto;
+  margin-bottom: 1.5em;
 }
 
 @media screen and (min-device-width : 320px) and (max-device-width : 1024px){
@@ -289,6 +266,7 @@
     width: 80vw;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
   }
@@ -303,8 +281,9 @@
   }
 
   .App-aboutSectionWrapper {
-    height: 100%;
+    height: auto;
     width: 90vw;
+    margin-bottom: 5vh;
   }
 
   .App-aboutSection {
@@ -321,7 +300,6 @@
 
   .App-projectAbout {
     width: 100%;
-    text-align: center;
   }
 
 }
