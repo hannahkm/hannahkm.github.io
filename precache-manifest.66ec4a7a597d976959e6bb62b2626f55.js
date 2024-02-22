@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c95fd358532e58a4f311",
+    "revision": "65839edd0fb14ad58274",
     "url": "/static/css/main.a38b13ff.chunk.css"
   },
   {
-    "revision": "c95fd358532e58a4f311",
-    "url": "/static/js/main.c95fd358.chunk.js"
+    "revision": "65839edd0fb14ad58274",
+    "url": "/static/js/main.65839edd.chunk.js"
   },
   {
     "revision": "2981538dd718ef902032",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/static/media/skybound.de48aa2e.png"
   },
   {
-    "revision": "b63fa5c484777bb4e7425e63dd7c0ace",
+    "revision": "d5824881dfd3c26fb4e8793714072a5b",
     "url": "/index.html"
   }
 ];
