@@ -1,7 +1,11 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://hannahkm.github.io'
 languageCode = 'en-us'
 title = 'hannah s kim'
 theme = "hugo-bearcub"
+
+[module]
+  [[module.imports]]
+    path = "https://github.com/clente/hugo-bearcub"
 
 # Main navigation menu
 [[menu.main]]
