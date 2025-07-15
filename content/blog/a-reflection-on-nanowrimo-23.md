@@ -1,0 +1,36 @@
++++
+author = "hannah"
+title = "a reflection on NaNoWriMo ‘23"
+date = "2024-02-24"
+description = "i started writing a novel in 2023."
+tags = [
+    "writing",
+    "hobbies",
+]
++++
+
+For starters, this is my first blog post! I decided to start up blogging since 1. I enjoy writing, 2. I enjoy journaling, and 3. why not? The idea of having my thoughts, my words, and my personality out on the internet is simultaneously terrifying and humbling. Maybe, many years down the line, someone will stumble upon my little page on the internet and get to learn about who I am.
+
+Regardless, I wanted to spend my first blog post talking about NaNoWriMo! NaNoWriMo stands for National Novel Writing Month, and it happens every November. Writers, both recreational and professional, are encouraged to work on their novels for the entirety of November and write 50k words. It doesn’t really matter if you start a project from scratch or continue an existing one, but for me, I decided to start from the beginning.
+
+I had a novel idea for the past little while, but I purposefully procrastinated on starting it until NaNoWriMo started so that I could fully encourage (re: force) myself to work on it. The website has a great portal for entering how many words you’ve written in a day (as well as how long it took, how you felt, etc, but I didn’t really keep track of that, since I tended to write throughout the entire day). I also made an effort to post on my Twitter about how much I was writing, so that I could keep myself accountable, but I also… stopped doing that.
+
+I have always enjoyed writing since I was a kid – a lot of my earliest memories were of me writing my own picture books. Even when I hadn’t learned to write yet, I was narrating to my dad what I wanted him to write, and I would fill the empty spaces with illustrations. Back then, before I had ready access to a computer, I would write on paper, fold it up, and staple the spine so that I could open it up like a book. (This reminds me that I would love to try my hand at book binding!) But while I spent a lot of my early years writing, it kind of faded away as I got more busy in late high school and into college.
+
+I’m super proud to say that I actually wrote an *entire trilogy* when I was in middle-high school. Was it any good? No. Absolutely not. There were about 10 different plots going on at once since I couldn’t decide which I wanted to keep. But regardless, I somehow stumbled my way to the end of a ~150k word journey. And that was one of the last writing projects I had.
+
+But! I’ve always wanted to participate in NaNoWriMo, and what better time than in my senior year of college? I was lucky enough to have a job offer at DataDog lined up post graduation, and to be mostly done with my academic requirements, so I had more time on my hands for the first time in a few years, and, most importantly, I had *inspiration.*
+
+The hardest part about writing is truly getting the story in your head into a fully fleshed out, developed idea. I’ve had many, many story ideas over the years, but they were such one-dimensional ideas – more like a single quote or scene that I wanted to write into reality – that they could barely be considered a wisp of smoke in the grand scheme of things. In comparison, I had slowly been brewing an idea that was more akin to a flame, or even an entire bonfire, in terms of my passion and my motivation for it.
+
+I have a lot to thank to Madeline Miller, the wonderful author of the book *The Song of Achilles.* It’s a retelling of *The Iliad* by Homer*,* the story of Achilles and the war against Troy, from the viewpoint of Patroclus, who was Achilles’ close friend (and lover?). I read *The Song of Achilles* earlier in 2023, and I was absolutely in love with the depth of the characters and the inescapable tragedy in the end. Her writing is so captivating as well, and I’m currently reading another one of her books, *Circe*.
+
+I decided that I wanted to write something akin to *The Song of Achilles*, in that it is also a retelling of *The Iliad* from Patroclus’ perspective, but that’s about where the similarities end. I made Achilles and Patroclus women, because I figured that women would be more enjoyable for me to write as a woman, and I created an entire nation(s) to set the scene in. I created my own gods and a new war to take place. The prophecy is mostly the same, though. The princess who takes Achilles’ place in my novel is doomed to die while fighting her nation’s war.
+
+What’s more, I also decided to pull from more Greek mythology. My story is about women (or at least, it is in it’s rough state right now), and what woman in Greek mythology could I easily take inspiration for? I took an alternate interpretation of the story of Medusa. Many people know Medusa as the evil, snake-haired woman who turns everyone she looks to into stone. She’s cruel, unforgiving, and a monster above all. But, what I wanted to take was her origin story.
+
+Most stories say that she lay with Poseidon in Athena's temple, and was thus punished by Athena to have her hair turned into snakes and to have her gaze turn others into stone. But other interpretations tell a slightly different story. Medusa was a mortal, and she was raped by Poseidon at the temple. Instead of punishing her, Athena gave Medusa her hair and her eyes as a way of protection, to ward off any other men who may try to take advantage of her.
+
+In the end, it’s still a tragedy, for Medusa is still, by most people’s definition, a monster. And she was killed for it. And that is the story of Medusa that I wanted to incorporate into my story.
+
+Currently, it’s been about four months since I started writing my novel, and many more months since I started developing its ideas in my head. It’s still a far way away from finishing, but it’s the most excited I’ve been over a writing project in many, many years. I still get bursts of inspiration and plot ideas when I’m going about my day, and I have a whole list of thoughts that I’m itching to put into writing. I feel that it’s safe to say that my motivation to write has returned after a five year hiatus. Here’s to, I hope, even more years of writing!

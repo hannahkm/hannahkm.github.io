@@ -1,0 +1,34 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'hannah s kim'
+theme = "hugo-bearcub"
+
+# Main navigation menu
+[[menu.main]]
+  name = "home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "blog"
+  url = "/blog/"
+  weight = 2
+
+[[menu.main]]
+  name = "email me"
+  url = "mailto:hannahs.kim@datadoghq.com"
+  weight = 4
+
+[[menu.main]]
+  name = "my github"
+  url = "https://www.github.com/hannahkm"
+  weight = 5
+
+[[menu.main]]
+  name = "find me on linkedin"
+  url = "https://www.linkedin.com/in/hannah-kim24"
+  weight = 6
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
