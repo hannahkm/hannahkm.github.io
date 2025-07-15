@@ -23,7 +23,7 @@ worked in the Go tracer and the DataDog tracing agent to handle bug fixes, new f
 created a Flipper program for the Instagram Consumer Experience team to assist with visualizing and debugging an internal framework.
 
 **Facebook University (now called Meta University)** -- may 2021 - aug 2021  
-created a personal itinerary planning app for android. allows users to create trips,check the weather, search popular destinations, and share with other users.
+created a personal itinerary planning app for android. allows users to create trips, check the weather, search popular destinations, and share with other users.
 
 ## the fun side
 
