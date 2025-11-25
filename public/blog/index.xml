@@ -6,8 +6,61 @@
     <description>Recent content in blog on hannah s kim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>i went to my first conference ever (GopherConUS &#39;25!)</title>
+      <link>http://localhost:1313/blog/gopherconus-25/</link>
+      <pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/gopherconus-25/</guid>
+      <description>&lt;p&gt;&lt;em&gt;&amp;ldquo;If you hold a Linux shell up to your ear&amp;hellip; you can hear the C&amp;rdquo;&lt;/em&gt; - Bill Kennedy&lt;/p&gt;&#xA;&lt;p&gt;By the time I&amp;rsquo;m starting this blog, it&amp;rsquo;s August 28th and we&amp;rsquo;re wrapping up GopherCon talks. It&amp;rsquo;s been a long week of talks, social events, and me frantically preparing for a talk because someone thought it was a good idea to accept me (a Gopher with barely even 1 year of experience) and to let me on stage in front of hundreds of more experienced engineers. In all honesty, I was not expecting to be accepted to talk, but I was, and now here I am.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><em>&ldquo;If you hold a Linux shell up to your ear&hellip; you can hear the C&rdquo;</em> - Bill Kennedy</p>
+<p>By the time I&rsquo;m starting this blog, it&rsquo;s August 28th and we&rsquo;re wrapping up GopherCon talks. It&rsquo;s been a long week of talks, social events, and me frantically preparing for a talk because someone thought it was a good idea to accept me (a Gopher with barely even 1 year of experience) and to let me on stage in front of hundreds of more experienced engineers. In all honesty, I was not expecting to be accepted to talk, but I was, and now here I am.</p>
+<p>My talk, &ldquo;Invisible Insight: Strategies for Auto-Instrumenting Go Applications Without Code Changes&rdquo;, was a journey that stretched over nearly 2 months. I went from someone who had never touched auto-instrumentation to someone who kind of, almost, <em>maybe</em> understands the ins and outs of compile time and run time instrumentation in Go. I would not claim to yet be an expert in this area, because I think it would take many more months or maybe years to reach that kind of level, but I&rsquo;m 2 months smarter than I was before, and that&rsquo;s all I&rsquo;m going to ask for.</p>
+<p>Auto-instrumentation is, as it turns out, and entire can of worms that I did not realize I was getting into. For starters, I can&rsquo;t even use most other programming languages as as template for what happens in Go. Since Go is a compile-time language, other approaches to auto-instrumentation like eBPF, library injection, and annotations are difficult and sometimes impossible. The option that we, at DataDog, opted for was to use this flag called <code>-toolexec</code>. It&rsquo;s a funny thing that, in very simple terms, allows you to wrap the standard Go compiler (and other tools) to do extra, self-defined work for you. And when you bundle up that self-defined work into a library that you can run with a simple script, you get our tool, Orchestrion.</p>
+<p>My talk focused mostly on Orchestrion and how it compares to the other big auto-instrumentation approach we have in the Go community: OpenTelemetry&rsquo;s eBPF (extended Berkeley package filter) library. As I alluded to earlier, eBPF is a runtime approach that I, at first, expected to be impossible with Go. But turns out, when you&rsquo;re determined (and smart) enough, eBPF <em>does</em> work. The only limitation we have with Go, once you boil it down far enough, is that we cannot make changes to our source code at runtime. So what eBPF does is to make changes to the <em>kernel</em> at runtime. Really mindblowing, if you ask me.</p>
+<p>So then, what&rsquo;s the difference? You can watch my talk to find out, or I can just tell you now. There are a couple of main differences:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Pillar</th>
+          <th>Compile time instrumentation</th>
+          <th>eBPF</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Performance</td>
+          <td>one-time overhead at compile time</td>
+          <td>overhead at runtime</td>
+      </tr>
+      <tr>
+          <td>Safety</td>
+          <td>safe to use</td>
+          <td>requires privileged access to kernel, potentially inviting malicious parties</td>
+      </tr>
+      <tr>
+          <td>Portability</td>
+          <td>available for any program that is able to compile</td>
+          <td>requires a Linux kernel</td>
+      </tr>
+      <tr>
+          <td>Stability</td>
+          <td>only requires that your code compiles</td>
+          <td>depends on calculating address offsets, memory, and the stack</td>
+      </tr>
+  </tbody>
+</table>
+<p>Ta-da! All the conclusions I came to during my talk have been boiled down into that table.</p>
+<p>More than just eBPF, toolchain and compiler systems, and telemetry knowledge, I&rsquo;ve come out of this process with a whole lot of presentation learnings. I&rsquo;ve done a fair share of presentations before, but they&rsquo;ve always been small scale. Think science fairs, mini workshops in college, etc. Never once have I spoke to hundreds of people at once, live. Much less with a live demo that was not <em>supposed</em> to be live until about 10 minutes before I got up on stage. Because presentations never Go as you expect, and this one was no different.</p>
+<p>Turns out, cramming as much as I can about an entire field of instrumentation is <em>hard</em>. There were so many details that I missed (how could I forget that a Mac does NOT run on Linux???). I&rsquo;m incredibly lucky to have my amazing coworker, Kemal, who helped me throughout this entire process and helped sanity check my results. He even donated his machine to run my code on a Linux VM because my machine would <em>not</em> behave. It was his demo that got shown during my talk, so huge shoutout to him, the secret supporter behind the scenes.</p>
+<p>And of course, as things always do, things went wrong. The demo didn&rsquo;t work. Or at least, it was working, but it was not giving the values that I was expecting to see. Numbers were a little off, and I have no idea how navigate it. For a brief moment (that felt like around 30 years, but was realistically around 3 seconds), I could only freeze and go through every single option I had. Bluff it off? I&rsquo;m not nearly tenured or experienced enough to pull that off. Admit things were wrong and move on? Yeah.</p>
+<p>After I got off stage, I could only sigh and immediately text all of my friends with the most dramatic retelling of how everything fell apart on stage. Because I love to exaggerate and to tell stories. But it was fine; it was a risky move to try showing things live, and it was a risk I wanted to take. It didn&rsquo;t work out exactly like I wanted it to, but that&rsquo;s fine! I can only accept that and move on in the moment.</p>
+<p>Is there more to do? Absolutely. There is still more in the demo that I want to improve, and I want to get my Linux VM working on my machine so that I can actually see the results directly on my screen. I could make the demo more realisitic, rather than the small, black box example I currently have. I&rsquo;m planning to work with Kemal to build this up. Shoutout to him again for teaching me all I know about instrumentation, and hopefully we can present the updated version of this talk in another conference!</p>
+<p>Aside from my talk, GopherCon was a lot of fun! I&rsquo;ve met so many Gophers from across the world and re-met several I&rsquo;ve known. It was great seeing Katie, my former manager at Datadog, giving her talk right after me and Felix, my coworker at Datadog, going on stage right before me! And it was fantastic helping out at the Asian Alliance meetup, even if it was just to order a whole lot of sushi for the group.</p>
+<p>At time of writing, the recording of my talk is not yet up on the <a href="https://www.youtube.com/c/GopherAcademy?app=desktop">Gopher Academy YouTube channel</a> yet, but it should be uploaded sometime soon. But if you&rsquo;re reading this and you&rsquo;re interested to see the code and to learn more, my GitHub project, including all of the code and my slides, is <a href="https://github.com/hannahkm/gopherconus-2025">here</a>.</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>thoughts on NaNoWriMo &#39;24</title>
       <link>http://localhost:1313/blog/thoughts-on-nanowrimo-24/</link>
